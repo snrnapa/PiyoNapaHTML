@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin:0; padding:0;
+}
+
+
+.blognavi{
+    font-size: 10px;
+}
+
+.headtitle img{
+    width: 100%;
+}
+
+.headtitle {
+    position: relative;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+
+.headtitle p {
+    position: absolute;
+    color: white;
+    top: 55%;
+    left: 40%;
+    font-family: 'Sacramento', cursive;
+    font-style: italic;
+    font-size: 80px;
+
+}
+
+.headtitle a {
+    position: absolute;
+    color: white;
+    top: 85%;
+    left: 0%;
+    font-size: 30px;
+}
+
+
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .headtitle{
+    font-size: 32px;
+}
+
+.headnavilist {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.navilistitem {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+
+
+
