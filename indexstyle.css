@@ -3,21 +3,60 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 
 
+#loading{
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: #0bd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.spinner{
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+
+}
+
+@keyframes sk-scaleout{
+    0%{
+        transform: scale(0);
+    }100%{
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
 
 
 .toptitle{
-    width: 1400px;
+    width: 100%;
     position: relative;
 }
 
 .blogname{
-    width: 1400px;
+    width: 100%;
+    height: 50px;
     position: relative;
     display: flex;
     justify-content: space-between;
+    /* background-color: #a9b0c1; */
+    background-color: rgb(90, 90, 90);
+
     /* box-shadow: 0 3px 0 #0092ca;
     background: #00caee; */
 
@@ -26,10 +65,9 @@
 }
 
 .blogname a{
-
-    font-size: 60px;
+    font-size: 30px;
     display: block;
-    color: #030303;
+    color: #F5F5F7;
     /* color: #e5f2f5; */
     text-decoration: none;
     font-family: 'Cookie', cursive;
@@ -38,22 +76,23 @@
     font-family: 'Yellowtail', cursive;
     font-family: 'Yuji Syuku', serif;
     font-family: 'Zen Kurenaido', sans-serif;
-
 }
+
 
 
 .topitem{
-    width: 1400px;
+    width: 100%;
+    height: 50px;
     /* background-color:rgba(40, 4, 241, 0.918); */
-    box-shadow: 0 3px 0 #0092ca;
-    background: #00acee;
-    display: flex;
+    box-shadow: 0 3px 0 #226b88c0;
+    background: #e6e8e9c0;
+    /* display: flex; */
     justify-content: space-between;
-    position :absolute;
+    position :relative;
 }
 
 .topitem a[href]{
-    font-size: 50px;
+    font-size: 30px;
     text-decoration: none;
     color: #e5f2f5;
     padding-right: 50px;
@@ -62,21 +101,203 @@
     font-family: 'Cookie', cursive;
     font-family: 'Kalam', cursive;
     font-family: 'Satisfy', cursive;
+    list-style: none;
 
 }
+
+ul.gmenu{
+height: 60px;
+background-color: #ddcbcb;
+display: flex;
+justify-content: space-around;
+}
+
+
+
+
+li.menucustom {
+width: 200px;
+padding: 5px;
+text-align: center;
+font-size: 35px;
+font-weight: 700;
+font-style: italic;
+
+text-decoration: none;
+list-style: none;
+color: black;
+text-align: center;
+/* font-weight: lighter;
+font-family: 'Cookie', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Satisfy', cursive; */
+
+
+font-family: 'Cookie', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Yellowtail', cursive;
+font-family: 'Yuji Syuku', serif;
+font-family: 'Zen Kurenaido', sans-serif;
+
+
+/* border: none;
+border-bottom: 2px solid #000;
+border-left: 2px solid #000; */
+
+position: relative;
+
+}
+
+ul.childmenu{
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+
+}
+
+
+ul.childmenu > li{
+padding: 10px;
+background-color: #d2ebf1;
+border-bottom: solid 2px #5d627b;
+box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+
+}
+
+
+ 
+
+
+
+
+li.menucustom:hover {
+background-color: #999696;
+transition: 0.3s;
+
+}
+
+li.menucustom > ul{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    position: relative;
+    width: 200px;
+
+}
+
+li.menucustom:hover ul{
+    opacity: 1;
+    height: 38px;
+    visibility: visible;
+    position: relative;
+    background-color: #d3cdd3;
+    /* padding: 5px;
+    margin-left: -5px; */
+    color: #000;
+    z-index: 20;
+}
+
+ul.childmenu li {
+    display: block;
+    margin: 0px;
+    position: relative;
+  }
+
+
+
+
+
+
+
+/**** BTN No. 2 ****/
+.btn-2 {
+border: none;
+border-bottom: 2px solid #000;
+border-left: 2px solid #000;
+}
+.btn-2:before,
+.btn-2:after {
+position: absolute;
+content: "";
+right: 0;
+top: 0;
+background: #000000;
+transition: all 0.3s ease;
+}
+.btn-2:before {
+height: 0%;
+width: 2px;
+}
+.btn-2:after {
+width: 0%;
+height: 2px;
+}
+.btn-2:hover:before {
+height: 100%;
+
+}
+.btn-2:hover:after {
+width: 100%;
+}
+.btn-2:hover {
+background-color: rgb(210, 222, 243);
+}
+
+
+
+
+
+
+.custom-btn {
+padding: 10px 25px;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+background: transparent;
+outline: none !important;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+height: 100%;
+
+/* ↓フォントのスタイル */
+width: 20%;
+font-size: 25px;
+text-decoration: none;
+color: black;
+padding-right: 5px;
+padding-left: 5px;
+/* padding-bottom: 10px; */
+font-weight: lighter;
+font-family: 'Cookie', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Satisfy', cursive;
+
+
+}
+
+
+.custom-btn:hover + .piyopic{
+width: 20%;
+}
+
+
 
 .headpic {
     /* padding: 11px; */
     background-color: #FFFFFF;
     display: inline;
-    width: 1400px;
+    width: 100%;
 }
 
 
 
 
 .maintitle{
-    width: 1400px;
+    width: 100%;
     position: relative;
 }
 
@@ -84,7 +305,7 @@
 .maintitle p {
     position: absolute;
     top: 55%;
-    left: 30%;
+    left: 70%;
     justify-content: space-around;
     display: block;
     color: whitesmoke;
@@ -111,7 +332,7 @@
 
 .toplist {
 
-    width: 1400px;
+    width: 100%;
     display: flex;
     font-size: 40px;
     font-style: italic;

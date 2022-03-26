@@ -22,8 +22,10 @@
         <!-- <meta property="fb:app_id" content="App-ID"> -->
         <meta name="twitter:card" content="summary_large_image">
 
-        
+        <!-- ↓個人的に制作したCSS -->
 		<link rel="stylesheet" href="indexstyle.css">
+        <!-- ↓bootstrapのCSS -->
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
 
 
@@ -49,78 +51,124 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Kalam&family=Satisfy&family=Yellowtail&family=Zen+Kurenaido&display=swap" rel="stylesheet">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Kalam&family=Satisfy&family=Yellowtail&family=Yuji+Syuku&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
 		<script src="sample.js"></script>
 	</head>
 
-	<body style="width: 1400px; background-color: antiquewhite;">
+	<body style="width: 100%; background-color: antiquewhite;">
+
+    
+    
+
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
 
 
 
+    
         <main>
 
 
-            <div class="toptitle">
 
-                <div class="blogname">
+        <div class="blogname">
 
-                    <a href="">ぴよなぱ日記</a>
-                    <a href="">記日ぱなよぴ</a>
-                </div>    
-
-
-
-                <div class="topitem">
-                    <a href="">Piyo's Page</a>
-                    <a href="">Schedule</a>
-                    <a href="">task</a>
-
-                    <a href="">Napa's Page</a>
-
-                </div>    
-
-                <img class="headpic" src="Picture\Header.jpg" alt="PiyoNapa and copen">
-
-            </div>
-
-            <div class="maintitle">
+            <a href="">ぴよなぱ日記</a>
+        </div>    
 
 
 
                 
 
+        <ul class="gmenu">
 
-                <!-- <p>PiyoNapa Diary</p>
-                <span>
-                    地方在住の遠距離カップルがプログラミングを教えあったり、
-                    車、バイクをいじってみたり、ドライブしたり、・・・等の日常を記録していく日記です。
-                    主に二人で作成したものをアップしていきます。
-                </span> -->
+            <li class="menucustom">
+                <a href="" >Git</a>
+
+                <ul class="childmenu">
+                    <li><a href="https://github.com/SayakaOyama">piyo git</a></li>
+                    <li><a href="http://localhost/mydocs/signup.php">php login</a></li>
+                    <li><a href="https://github.com/snrnapa">napa git</a></li>
+                </ul>
+            </li>
+
+            <li class="menucustom">
+                <a style="height: 100%;" href="" >Picture</a>
+    
+                    <ul class="childmenu">
+                        <li><a href="https://github.com/SayakaOyama">Piyo</a></li>
+                        <li><a href="https://github.com/snrnapa">Napa</a></li>
+                    </ul>
+    
+                </li>
+
+
+
+            <li class="menucustom">
+            <a style="height: 100%;" href="" >Youtube</a>
+
+                <ul class="childmenu">
+                    <li><a href="https://github.com/SayakaOyama">Piyo</a></li>
+                    <li><a href="https://github.com/snrnapa">Napa</a></li>
+                </ul>
+
+            </li>
 
 
     
-            </div>
 
 
-            <div class="toplist">
-                <li class="navilistitem"><a href="https://www.youtube.com/channel/UCFiwCIsSw8NlQ0724IlY9DQ">Piyo's</a></li>
-                <li class="navilistitem"><a href="a">Napa's</a></li>
-            </div>
+                    
 
 
-
-            <div class="toppic-container">
-
-                    <img class="toppic" src="Picture\piyotop.JPG" alt="piyotop">
-
-                    <img class="toppic" src="Picture\napatop.PNG" alt="napatop">
 
 
         
-    
+        </ul>
+
+
+        <!-- <div class="hovertest">
+            <p>napanapa</p>
+        </div> -->
+
+
+        <!-- <div style="overflow: hidden; position: relative; display: flex;" class="slider-inner"> -->
+            
+            <li  class="imglist" style="display: block; overflow: hidden; position: relative;">
+                <img class="slider-item" 
+                style="width: 100%;
+                position: relative; 
+                object-fit: cover; height: 700px;"
+                src="Picture\Header.jpg" alt="Header at coffe">
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+            <div style="width: 100%; position: absolute; top: 250px;
+            /* background: linear-gradient(to top, rgba(15, 15, 15, 0.6), transparent); */
+            ">
+                <p style=" font-size: 100px; text-align: center; color: rgba(223, 227, 230, 0.85);
+               
+               
+               font-family: 'Cookie', cursive;
+               font-family: 'Kalam', cursive;
+               font-family: 'Satisfy', cursive;
+               ">PiyoNapaDiary</p>
+   
+   
+
             </div>
-
-
-
 
 
 
@@ -141,6 +189,7 @@
         
 
 		
+
 
 
 
